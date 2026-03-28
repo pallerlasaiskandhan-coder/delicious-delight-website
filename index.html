@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Delight Restro | Premium Dining in Hyderabad</title>
+    <meta name="description" content="Enjoy flavorful meals, private cabins, and a comfortable dining experience in Hyderabad — all at affordable prices.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Delicious Delight.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#ambience">Ambience</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+            <a href="tel:07093146931" class="btn btn-outline nav-btn"><i class="fas fa-phone"></i> Call Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#menu" class="mobile-link">Menu</a>
+            <a href="#ambience" class="mobile-link">Ambience</a>
+            <a href="#reviews" class="mobile-link">Reviews</a>
+            <a href="tel:07093146931" class="btn btn-primary" style="margin-top:20px; text-align:center; width: 100%;"><i class="fas fa-phone"></i> Call Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="./images/hero.png" alt="Restaurant Interior with Food" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="fade-up">Delicious Food.<br>Relaxed Vibes.<br>Perfect Moments.</h1>
+                <p class="fade-up delay-1">Enjoy flavorful meals, private cabins, and a comfortable dining experience in Hyderabad — all at affordable prices.</p>
+                <div class="hero-ctas fade-up delay-2">
+                    <a href="#location" class="btn btn-primary">👉 Get Directions</a>
+                    <a href="#menu" class="btn btn-secondary">👉 View Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container about-grid">
+            <div class="about-content fade-in-left">
+                <p class="tagline">ABOUT US</p>
+                <h2>A Perfect Blend of <span class="highlight">Comfort & Taste</span></h2>
+                <p class="mb-4">Welcome to Delicious Delight Restro, where we bring together the casual, heartwarming vibe of a classic dhaba with the premium comfort of modern dining.</p>
+                <p class="mb-4">We believe great food shouldn't break the bank. Our affordable pricing ranges between <strong>₹200–₹400</strong>, ensuring everyone can enjoy a fantastic meal without compromising on quality or experience.</p>
+                
+                <ul class="feature-list mb-4">
+                    <li><i class="fas fa-check-circle text-accent"></i> Private AC Cabins Available</li>
+                    <li><i class="fas fa-check-circle text-accent"></i> Ideal for Groups & Families</li>
+                    <li><i class="fas fa-check-circle text-accent"></i> Drive-through & Delivery Options</li>
+                </ul>
+            </div>
+            <div class="about-image fade-in-right">
+                <div class="image-wrapper">
+                    <img src="./images/ambience.png" alt="Private AC Cabin Seating" class="rounded-image shadow-lg">
+                    <div class="floating-badge">
+                        <i class="fas fa-star text-accent"></i>
+                        <span>Rating: 4.1/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding bg-alt">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="tagline">VALUE PROPOSITION</p>
+                <h2>Why Choose Us</h2>
+                <p class="section-subtitle">We go beyond just serving food. We create an atmosphere where you want to stay, celebrate, and make memories.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="icon-box"><i class="fas fa-coins"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Premium experience without the premium price tag. ₹200–₹400 per person.</p>
+                </div>
+                <div class="feature-card fade-up delay-1">
+                    <div class="icon-box"><i class="fas fa-utensils"></i></div>
+                    <h3>Delicious & Fresh</h3>
+                    <p>Cooked to order with the finest ingredients and authentic spices.</p>
+                </div>
+                <div class="feature-card fade-up delay-2">
+                    <div class="icon-box"><i class="fas fa-users"></i></div>
+                    <h3>Family-Friendly</h3>
+                    <p>A safe, warm, and inviting atmosphere for all generations to enjoy.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="icon-box"><i class="fas fa-snowflake"></i></div>
+                    <h3>Private AC Cabins</h3>
+                    <p>Exclusive cabins for up to 12 people to enjoy privacy and comfort.</p>
+                </div>
+                <div class="feature-card fade-up delay-1">
+                    <div class="icon-box"><i class="fas fa-car"></i></div>
+                    <h3>Easy Access</h3>
+                    <p>Conveniently located with ample parking available for our guests.</p>
+                </div>
+                <div class="feature-card fade-up delay-2">
+                    <div class="icon-box"><i class="fas fa-motorcycle"></i></div>
+                    <h3>Dine-in or Delivery</h3>
+                    <p>Choose to dine with us, use our drive-through, or order delivery home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section-padding" id="menu">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="tagline">OUR SPECIALS</p>
+                <h2>Menu Highlights</h2>
+                <p class="section-subtitle">Savor our chef's special creations, balancing traditional flavors with modern presentation.</p>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Highlight Card with Image -->
+                <div class="menu-card highlight-card fade-up">
+                    <div class="menu-img-wrapper">
+                        <img src="./images/menu1.png" alt="Chilli Chicken & Biryani">
+                        <div class="price-tag">Bestseller</div>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Chilli Chicken & Biryani Combos</h3>
+                        <p>Our signature dishes perfectly paired. Spicy, rich, and deeply satisfying.</p>
+                    </div>
+                </div>
+
+                <!-- Text Based Menu List -->
+                <div class="menu-list-container fade-in-right">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Tandoori Roti</h4>
+                            <span class="dots"></span>
+                            <span class="price">₹40</span>
+                        </div>
+                        <p>Freshly baked in our traditional clay oven.</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>SPL Chicken Fried Rice</h4>
+                            <span class="dots"></span>
+                            <span class="price">₹220</span>
+                        </div>
+                        <p>Wok-tossed rice with marinated chicken and veggies.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Egg Keema Naan</h4>
+                            <span class="dots"></span>
+                            <span class="price">₹150</span>
+                        </div>
+                        <p>Stuffed soft bread with spicy minced egg filling.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Chicken Biryani</h4>
+                            <span class="dots"></span>
+                            <span class="price">₹280</span>
+                        </div>
+                        <p>Aromatic basmati rice cooked with succulent chicken pieces.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h4>Chilli Chicken</h4>
+                            <span class="dots"></span>
+                            <span class="price">₹250</span>
+                        </div>
+                        <p>Spicy Indo-Chinese classic with bell peppers and green chilies.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 fade-up">
+                <a href="#contact" class="btn btn-primary">👉 Explore Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ambience Section -->
+    <section class="ambience section-padding bg-dark text-white" id="ambience">
+        <div class="container ambience-grid">
+            <div class="ambience-content fade-in-left">
+                <p class="tagline">EXPERIENCE</p>
+                <h2 class="text-white">Relaxed Dhaba Vibe.<br>Premium Comfort.</h2>
+                <p class="mb-4 text-gray">Whether you're looking for a casual outing with friends or a private family dinner, we have the perfect seating for you.</p>
+                <ul class="feature-list mb-4">
+                    <li><i class="fas fa-couch text-accent"></i> Comfort seating for large groups</li>
+                    <li><i class="fas fa-door-closed text-accent"></i> Cabin seating (up to ~12 people)</li>
+                    <li><i class="fas fa-lightbulb text-accent"></i> Casual dhaba-style feel</li>
+                </ul>
+                <a href="#location" class="btn btn-primary mt-4">👉 Book Your Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="tagline">TESTIMONIALS</p>
+                <h2>What Our Guests Say</h2>
+                <div class="overall-rating float-anim">
+                    <span class="stars">★★★★<span class="half-star">★</span></span>
+                    <span class="rating-text">4.1 / 5 Average Rating</span>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card fade-up">
+                    <div class="stars text-accent mb-2">★★★★★</div>
+                    <p class="review-text">"Great food and service for the price. The ambience is really nice and the staff is very polite."</p>
+                    <div class="reviewer">- Anjali R.</div>
+                </div>
+                <div class="review-card fade-up delay-1">
+                    <div class="stars text-accent mb-2">★★★★★</div>
+                    <p class="review-text">"Perfect place for friends and group dining. We booked a cabin and had a fantastic time."</p>
+                    <div class="reviewer">- Suresh M.</div>
+                </div>
+                <div class="review-card fade-up delay-2">
+                    <div class="stars text-accent mb-2">★★★★☆</div>
+                    <p class="review-text">"Chilli chicken was really tasty! Portions are generous and the prices are very affordable."</p>
+                    <div class="reviewer">- Preethi K.</div>
+                </div>
+                <div class="review-card fade-up delay-3">
+                    <div class="stars text-accent mb-2">★★★★★</div>
+                    <p class="review-text">"Nice ambience with private cabins. Ordered Chicken Biryani and it was absolutely delicious."</p>
+                    <div class="reviewer">- Rahul V.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section class="location section-padding bg-alt" id="location">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="tagline">VISIT US</p>
+                <h2>Location & Contact</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card fade-in-left">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Basuregadi Village, Opp HP Petrol Pump, Gandimaisamma Road, Medchal Main Road, Hyderabad, Telangana 500043</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item mt-4">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>070931 46931</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item mt-4">
+                        <div class="icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Open daily – Closes at 10:30 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-actions mt-5">
+                        <a href="tel:07093146931" class="btn btn-outline" style="width: 100%;"><i class="fas fa-phone"></i> Call Now</a>
+                        <a href="https://maps.google.com/?q=Delicious+Delight+Restro+Hyderabad" target="_blank" class="btn btn-primary" style="width: 100%;">👉 Get Directions</a>
+                    </div>
+                </div>
+                
+                <div class="map-container fade-in-right shadow-lg">
+                    <!-- Placeholder map iframe pointing to a generic Hyderabad map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.834017361427!2d78.4357778!3d17.5154444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDMwJzU1LjYiTiA3OMKwMjYnMDguOCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta text-center fade-up" id="contact">
+        <div class="container final-cta-container">
+            <h2 class="text-white">Ready for a Delicious Experience?</h2>
+            <p class="text-light-gray">Visit us today or order your favorite meal now.</p>
+            <div class="mt-4 final-btns">
+                <a href="#location" class="btn btn-primary btn-lg">👉 Visit Us</a>
+                <a href="tel:07093146931" class="btn btn-secondary btn-lg"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Delicious Delight Restro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom CTA (Mobile Only) -->
+    <div class="mobile-bottom-cta">
+        <a href="tel:07093146931" class="cta-half call-btn">
+            <i class="fas fa-phone"></i> Call
+        </a>
+        <a href="#location" class="cta-half dir-btn">
+            <i class="fas fa-directions"></i> Directions
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
