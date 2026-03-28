@@ -66,14 +66,16 @@ h1, h2, h3, h4, h5, h6 {
 .btn-lg { padding: 16px 36px; font-size: 1.1rem; }
 
 /* Navbar */
-.navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 24px 0; transition: var(--transition); background: transparent; }
-.navbar.scrolled { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 16px 0; box-shadow: var(--shadow-sm); }
+.navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 20px 0; transition: var(--transition); background: var(--primary); box-shadow: var(--shadow-lg); border-bottom: 3px solid var(--accent); }
+.navbar.scrolled { padding: 14px 0; background: var(--primary); }
 .nav-content { display: flex; justify-content: space-between; align-items: center; }
-.logo { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+.logo { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--white); text-decoration: none; letter-spacing: -0.5px; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
-.nav-links a { color: var(--text-main); text-decoration: none; font-weight: 500; transition: var(--transition); font-family: 'Outfit', sans-serif; }
+.nav-links a { color: #e0e0e0; text-decoration: none; font-weight: 500; transition: var(--transition); font-family: 'Outfit', sans-serif; }
 .nav-links a:hover { color: var(--accent); }
-.mobile-menu-btn { display: none; background: transparent; border: none; font-size: 1.5rem; color: var(--primary); cursor: pointer; }
+.nav-btn { border-color: rgba(255,255,255,0.3) !important; color: var(--white) !important; }
+.nav-btn:hover { background: var(--accent) !important; border-color: var(--accent) !important; color: var(--white) !important; }
+.mobile-menu-btn { display: none; background: transparent; border: none; font-size: 1.5rem; color: var(--white); cursor: pointer; }
 .mobile-nav { position: fixed; top: 70px; left: 0; width: 100%; background: var(--white); padding: 24px; display: flex; flex-direction: column; gap: 16px; transform: translateY(-150%); transition: var(--transition); box-shadow: var(--shadow-md); z-index: 999; }
 .mobile-nav.active { transform: translateY(0); }
 .mobile-nav a.mobile-link { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1.2rem; color: var(--primary); text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--bg-alt); }
@@ -135,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu-item p { color: var(--text-light); font-size: 0.95rem; margin: 0; }
 
 /* Ambience */
-.ambience-grid { background-image: linear-gradient(rgba(28,28,28,0.8), rgba(28,28,28,0.9)), url('./images/ambience.png'); background-size: cover; background-position: center; border-radius: var(--radius-lg); padding: 80px 64px; box-shadow: var(--shadow-lg); }
+.ambience-grid { background-image: linear-gradient(rgba(28,28,28,0.8), rgba(28,28,28,0.9)), url('https://allaboutgoa.com/wp-content/uploads/2023/12/Best-Private-Cabin-Cafe-And-Restaurant-For-Couples-In-Allahabad-20-.jpg'); background-size: cover; background-position: center; border-radius: var(--radius-lg); padding: 80px 64px; box-shadow: var(--shadow-lg); }
 .ambience-content { max-width: 500px; }
 .ambience-content h2 { margin-bottom: 16px; }
 
@@ -198,18 +200,35 @@ footer { background: #111; padding: 32px 0; color: #888; border-top: 1px solid #
 }
 
 @media (max-width: 768px) {
+  body { font-family: 'Outfit', sans-serif; padding-bottom: 60px; } /* Space for bottom CTA */
+  p, .review-text, .contact-item p { font-family: 'Inter', sans-serif; }
+  .section-padding { padding: 60px 0; }
+  .container { padding: 0 16px; }
   .nav-links, .nav-btn { display: none; }
   .mobile-menu-btn { display: block; }
-  .hero h1 { font-size: 2.75rem; }
-  .about-grid, .menu-grid, .contact-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2.75rem; letter-spacing: -0.5px; line-height: 1.15; }
+  .hero p { font-size: 1.15rem; margin-bottom: 32px; }
+  .about-grid, .menu-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .floating-badge { display: none; }
-  .about-image { order: -1; margin-bottom: 24px; }
-  .features-grid { grid-template-columns: 1fr; }
-  .hero-ctas, .contact-actions, .final-btns { flex-direction: column; }
-  .ambience-grid { padding: 40px 24px; }
-  .final-cta h2 { font-size: 2.5rem; }
+  .about-image { order: -1; margin-bottom: 16px; }
+  .section-header h2 { font-size: 2.25rem; }
+  .features-grid { grid-template-columns: 1fr; gap: 20px; }
+  .feature-card { padding: 32px 24px; }
+  .hero-ctas, .contact-actions, .final-btns { flex-direction: column; width: 100%; gap: 12px; }
+  .hero-ctas .btn, .contact-actions .btn, .final-btns .btn { width: 100%; justify-content: center; }
+  .ambience-grid { padding: 40px 24px; border-radius: var(--radius-md); }
+  .final-cta h2 { font-size: 2.25rem; margin-bottom: 12px; }
+  .menu-img-wrapper { height: 250px; }
+  .menu-list-container { gap: 20px; margin-top: 32px; }
+  .menu-item { background: var(--white); padding: 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-md); border-left: 4px solid var(--accent); }
+  .menu-item-header { flex-wrap: wrap; align-items: flex-start; }
+  .dots { display: none; }
+  .menu-item-header h4 { width: 100%; margin-bottom: 8px; font-size: 1.25rem; color: var(--primary); font-family: 'Outfit', sans-serif; }
+  .menu-item p { margin-top: 12px; font-size: 1rem; }
+  .menu-card-body { padding: 24px; }
+  .mobile-nav a.mobile-link { font-size: 1.25rem; }
+  .contact-card { padding: 32px 24px; }
   
   /* Mobile CTA visible */
   .mobile-bottom-cta { display: flex; }
-  body { padding-bottom: 60px; /* Space for bottom CTA */ }
 }
