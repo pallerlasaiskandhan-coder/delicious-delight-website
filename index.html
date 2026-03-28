@@ -52,7 +52,7 @@
                 <h1 class="fade-up">Delicious Food.<br>Relaxed Vibes.<br>Perfect Moments.</h1>
                 <p class="fade-up delay-1">Enjoy flavorful meals, private cabins, and a comfortable dining experience in Hyderabad — all at affordable prices.</p>
                 <div class="hero-ctas fade-up delay-2">
-                    <a href="https://maps.google.com/maps?daddr=Basuregadi+Village,+Opp+HP+Petrol+Pump,+Gandimaisamma+Road,+Hyderabad,+Telangana+500043" target="_blank" class="btn btn-primary">👉 Get Directions</a>
+                    <a href="#location" class="btn btn-primary">👉 Get Directions</a>
                     <a href="#menu" class="btn btn-secondary">👉 View Menu</a>
                 </div>
             </div>
@@ -297,12 +297,18 @@
                     
                     <div class="contact-actions mt-5">
                         <a href="tel:07093146931" class="btn btn-outline" style="width: 100%;"><i class="fas fa-phone"></i> Call Now</a>
-                        <a href="https://maps.google.com/maps?daddr=Basuregadi+Village,+Opp+HP+Petrol+Pump,+Gandimaisamma+Road,+Hyderabad,+Telangana+500043" target="_blank" class="btn btn-primary" style="width: 100%;">👉 Get Directions</a>
+                        <a href="https://maps.google.com/?q=Delicious+Delight+Restro+Hyderabad" target="_blank" class="btn btn-primary" style="width: 100%;">👉 Get Directions</a>
                     </div>
                 </div>
                 
-                <div class="map-container fade-in-right shadow-lg">
-                    <iframe src="https://maps.google.com/maps?q=Basuregadi%20Village,%20Opp%20HP%20Petrol%20Pump,%20Gandimaisamma%20Road,%20Hyderabad,%20Telangana%20500043&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map-container fade-in-right shadow-lg" style="position: relative;">
+                    <a href="https://maps.google.com/maps?daddr=Basuregadi+Village,+Opp+HP+Petrol+Pump,+Gandimaisamma+Road,+Hyderabad,+Telangana+500043" target="_blank" aria-label="Get Directions" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer; display: block;"></a>
+                    <!-- Placeholder map iframe pointing to a generic Hyderabad map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.834017361427!2d78.4357778!3d17.5154444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDMwJzU1LjYiTiA3OMKwMjYnMDguOCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; pointer-events: none;" allowfullscreen="" loading="lazy"></iframe>
+                    
+                    <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--primary); color: var(--white); padding: 12px 24px; border-radius: 50px; font-weight: 600; font-family: 'Outfit', sans-serif; pointer-events: none; box-shadow: var(--shadow-lg); z-index: 11; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
+                        <i class="fas fa-location-arrow" style="color: var(--accent);"></i> Tap Map for Directions
+                    </div>
                 </div>
             </div>
         </div>
@@ -331,7 +337,7 @@
         <a href="tel:07093146931" class="cta-half call-btn">
             <i class="fas fa-phone"></i> Call
         </a>
-        <a href="https://maps.google.com/maps?daddr=Basuregadi+Village,+Opp+HP+Petrol+Pump,+Gandimaisamma+Road,+Hyderabad,+Telangana+500043" target="_blank" class="cta-half dir-btn">
+        <a href="#location" class="cta-half dir-btn">
             <i class="fas fa-directions"></i> Directions
         </a>
     </div>
