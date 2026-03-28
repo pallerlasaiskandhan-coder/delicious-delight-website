@@ -200,8 +200,7 @@ footer { background: #111; padding: 32px 0; color: #888; border-top: 1px solid #
 }
 
 @media (max-width: 768px) {
-  body { font-family: 'Outfit', sans-serif; padding-bottom: 60px; } /* Space for bottom CTA */
-  p, .review-text, .contact-item p { font-family: 'Inter', sans-serif; }
+  body { padding-bottom: 60px; } /* Space for bottom CTA */
   .section-padding { padding: 60px 0; }
   .container { padding: 0 16px; }
   .nav-links, .nav-btn { display: none; }
